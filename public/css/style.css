@@ -1,0 +1,43 @@
+body > div {
+    max-width: 500px;
+}
+
+h1 > div{
+    font-size: 2.5rem;
+}
+
+
+#list-container .list-item{
+    border-radius: 5px;
+
+    label {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &:focus{
+        background-color: rgba(0, 128, 218, 0.15);
+        outline: none;
+    }
+
+    &:has(input:checked) label{
+        text-decoration: line-through;
+        text-decoration-color: #989898;
+        color: #989898;
+
+    }
+
+    i.bi.bi-trash3{
+        font-size: 1.2rem;
+        padding: 0 0 0 10px;
+        cursor: pointer;
+
+        &:hover{
+            color: red;
+        }
+    }
+
+    &:hover{
+        background-color: rgba(0, 128, 218, 0.34);
+    }
+}
